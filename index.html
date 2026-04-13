@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dash El Pirata</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap" rel="stylesheet">
 
 <style>
@@ -17,7 +19,7 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-              url('dash.jpg') center/cover no-repeat;
+              url('./dash.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,27 +28,17 @@ body {
 
 .hero h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 4rem;
-  letter-spacing: 3px;
-}
-
-.hero p {
-  opacity: 0.8;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .btn {
   margin-top: 20px;
-  padding: 15px 35px;
-  border-radius: 40px;
+  padding: 15px 30px;
+  border-radius: 30px;
   background: #D4AF37;
   color: black;
   text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #D4AF37;
 }
 
 /* LINKS */
@@ -56,37 +48,25 @@ body {
 
 .links a {
   display: block;
-  margin: 15px auto;
+  margin: 10px auto;
   width: 80%;
   padding: 15px;
   border: 1px solid #D4AF37;
   border-radius: 30px;
-  text-decoration: none;
   color: white;
-  transition: 0.3s;
-}
-
-.links a:hover {
-  background: #8B0000;
-  box-shadow: 0 0 10px #8B0000;
+  text-decoration: none;
 }
 
 /* RELEASE */
 .release {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px;
 }
 
 .release img {
   width: 200px;
   border-radius: 10px;
-  transition: 0.3s;
 }
-
-.release img:hover {
-  transform: scale(1.05);
-}
-
 </style>
 </head>
 
@@ -102,11 +82,10 @@ body {
   <a href="#">Spotify</a>
   <a href="#">YouTube</a>
   <a href="#">Apple Music</a>
-  <a href="#">SoundCloud</a>
 </section>
 
 <section class="release">
-  <img src="cover.jpg">
+  <img src="./cover.jpg" alt="cover">
   <h2>Último lanzamiento</h2>
   <a href="#" class="btn">Play</a>
 </section>
